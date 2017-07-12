@@ -10,7 +10,7 @@ class MytestSpider(scrapy.Spider):
 　　　　　　　　　'EXTENSIONS': {  
 　　　　　　　　　　　'mymidtest.mydownutils.extension.SpiderOpenCloseLogging': 500,  
 　　　　　　　　　},  
-	'MYEXT_ENABLED': True,  
+　　　　　　　　'MYEXT_ENABLED': True,  
 　　　　　}  
 'mymidtest.mydownutils.extension.SpiderOpenCloseLogging'为工具包在项目下的路径
 '项目名称.包名.文件名.类名'  
@@ -27,7 +27,6 @@ class MytestSpider(scrapy.Spider):
 ### 可以为程序设置下载线程的数量
 ######在downuitls.py文件中可以设置下面  
 	queue=Queue.Queue(maxsize=10) ## 可以设置队列的大小  0或小于0为无限大  
-	con = threading.Condition()  
 	downThreadNumb = 3  # 下载线程个数  可以设置下载线程数量 
 
 
