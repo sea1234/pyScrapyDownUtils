@@ -6,7 +6,7 @@ import Queue
 import urllib
 import os
 
-from mymidtest.mydownutils.redisutil import operatRedis
+from redisutil import operatRedis
 
 
 queue=Queue.Queue(maxsize=10) ## 可以设置队列的大小  0或小于0为无限大

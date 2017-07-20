@@ -5,8 +5,7 @@ __author__ = 'cht'
 from scrapy import signals
 from scrapy.exceptions import NotConfigured
 
-from mymidtest.mydownutils.redisutil import operatRedis
-from mymidtest.mydownutils import downuitls
+import downuitls
 
 
 class SpiderOpenCloseLogging(object):
